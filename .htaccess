@@ -1,0 +1,13 @@
+# schimbarea numelui fișierului implicit
+DirectoryIndex index.php?page=home
+
+# stabilirea unor reguli de conversie a unor șiruri de caractere
+RewriteEngine On
+RewriteRule index.html index.php
+RewriteRule ^([a-zA-Z]+)\.html$ index.php?page=$1
+
+# autentificare prin user/parolă
+#AuthType Basic
+#AuthName "Introdu datele de autentificare"
+#AuthUserFile /var/www/html/workspace/bmeze/Proiect/.htpasswd
+#Require valid-user
